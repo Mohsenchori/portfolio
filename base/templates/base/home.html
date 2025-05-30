@@ -1,0 +1,293 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center mt-10">
+    <h1 class="text-4xl font-bold mb-6">Welcome to My Portfolio</h1>
+
+    <!--hero section-->
+    <section class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <!--profile picture-->
+        <img src="{% static 'images/profile.jpg' %}" alt="Your Name" class="w-40 h-40 rounded-full border-4 border-white mb-6 shadow-lg object-cover">
+
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Mohsen</h1>
+        <p class="text-xl md:text-2xl mb-6">Backend Developer | Django | bachelour of Software Engineering</p>
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+            View My Projects
+        </a>
+    </section>
+
+    <!--projects section-->
+    <section class="projects px-4 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">My Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow-md p-4">
+      <img src="{% static 'images/bazargani110.png' %}" alt="Project 1" class="rounded-xl mb-4">
+      <h3 class="text-xl font-semibold mb-2">Bazargani 110 Kurdistan</h3>
+      <p class="text-gray-600 mb-4">A warehouse and shipment tracking system for international trade.</p>
+      <a href="" class="text-blue-600 font-semibold hover:underline">View Details →</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow-md p-4">
+      <img src="{% static 'images/TopicMedia.png' %}" alt="Project 2" class="rounded-xl mb-4">
+      <h3 class="text-xl font-semibold mb-2">Social Media App</h3>
+      <p class="text-gray-600 mb-4">A Reddit-like platform where users create rooms and post comments.</p>
+      <a href="" class="text-blue-600 font-semibold hover:underline">View Details →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-gray-100 py-12 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Skills & Experience</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Skill Card -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <!-- Replace with icon (you can use Heroicons or any SVG/icon) -->
+        <img src="/static/images/python.png" alt="Python" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">Python</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- Django -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/django.png" alt="Django" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">Django</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- celery -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/celery.png" alt="celery" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">Celery</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- PostgreSQL -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/postgre.png" alt="PostgreSQL" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">PostgreSQL</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- html -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/html.png" alt="PostgreSQL" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">HTML</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- css -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/css.png" alt="PostgreSQL" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">CSS - Tailwind</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- django DRF -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/drf.png" alt="PostgreSQL" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">REST Framework</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+
+      <!-- JS -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/java-script.png" alt="PostgreSQL" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">CSS - Tailwind</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- git -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/git.png" alt="git" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">git / Github</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- deplyment -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <img src="/static/images/nginx.png" alt="git" class="w-40 h-40 mb-2">
+        <h3 class="text-lg font-semibold mb-2">deployment (gunicorn - nginx)</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-sm"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--  languages  -->
+
+    <section class="bg-gray-100 py-12 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Languages</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- english -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <h3 class="text-lg font-semibold mb-2">ENGLISH</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- persian -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <h3 class="text-lg font-semibold mb-2">PERSIAN</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+        </div>
+      </div>
+
+      <!-- KURDISH -->
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col items-center">
+        <h3 class="text-lg font-semibold mb-2">KURDISH</h3>
+        <div class="flex space-x-1">
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-sm"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!--  intro -->
+  <section class=" py-16 px-4 md:px-20 mb-10">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
+
+    <div class="bg-white dark:bg-gray-800 px-6 py-10 rounded-2xl shadow" style="text-align: left; padding-top: 2rem; padding-bottom: 2rem;" dir="ltr">
+      <p class="text-base text-gray-800 dark:text-gray-200 leading-relaxed" style="font-weight: 500;" >
+        I'm a self-taught backend developer with a bachelour degree in Software Engineering with a strong focus on Python and Django. I enjoy building practical,
+        real-world applications that solve problems and a strong interest in enhancing existing products.
+        <br /><br />
+        With a background in business and logistics, I bring a practical mindset to development. I’ve worked on
+        solo projects that involve everything from database design and API development to user-facing interfaces.
+        <br /><br />
+        Currently, I’m learning more about Celery, Docker, and microservices to take my backend skills to the next level. and use concepts i have learned from university.
+        I'm actively looking for opportunities as a junior Django developer where I can grow and contribute.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--  contact me -->
+    <section class="py-16 px-4 md:px-20">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Contact Me</h2>
+
+    <div class="bg-white p-6 rounded-2xl shadow space-  y-4">
+
+      <div class="space-y-2 flex justify-center gap-6 p-4">
+        <div class=" items-center space-x-3">
+          <img src="{% static 'images/email.png'%}" class="w-40 h-7 mb-2">
+          <span class="text-gray-700 dark:text-gray-100"><a href="sayedmohamadchori@gmail.com" class="text-blue-600 dark:text-blue-400 underline">youremail@example.com</a></span>
+        </div>
+
+        <div class=" items-center space-x -3">
+          <img src="{% static 'images/telegram.png'%}" class="w-40 h-7 mb-2">
+          <span class="text-gray-700 dark:text-gray-100"><a href="https://t.me/mahciin" class="text-blue-600 dark:text-blue-400 underline">@yourusername</a></span>
+        </div>
+
+        <div class=" items-center space-x-3">
+          <img src="{% static 'images/github.png' %}" class="w-40 h-7 mb-2">
+          <span class="text-gray-700 dark:text-gray-100 m"><a href="https://github.com/yourgithub" class="text-blue-600 dark:text-blue-400 underline">github.com/yourgithub</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 mt-10 border-t border-gray-300 dark:border-gray-700">
+  <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+    <p class="text-sm text-center md:text-left">
+      © 2025 Mohsen. All rights reserved.
+    </p>
+
+    <div class="flex space-x-4">
+      <!-- Social icons (FontAwesome or similar can be used) -->
+      <a href="https://github.com/your-github" class="hover:text-blue-500" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/your-linkedin" class="hover:text-blue-500" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sayedmohamadchori@email.com" class="hover:text-blue-500">Email</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+{% endblock %}
